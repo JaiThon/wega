@@ -1,0 +1,58 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer-game {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container-game {
+    padding: 16px;
+}
+
+.modal-content-game {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 520px; /* Could be more or less, depending on screen size */
+    height: 300px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation Same to Login css*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}

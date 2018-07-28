@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEGA Running Box</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+
+    <!-- login stylesheet for this page-->
+    <link href="css/login.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="WebGame.html">WEGA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Game component-->
+            <li class="nav-item  dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item active" href="GameList1.html">2D Game</a>
+                <a class="dropdown-item" href="GameList2.html">3D RPG Game</a>
+                <a class="dropdown-item" href="Notyet.html">VR Game</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <!-- login component-->
+            <li class="nav-item">
+              <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a /button>
+
+              <div id="id01" class="modal" target="parent">
+
+                <form class="modal-content animate" action="/login_submit.php">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="img/avater.png" alt="Avatar" class="avatar" width="50px" height="100px">
+                    </div>
+
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="location.href='signup.html'" class="signupbtn">Sign up</button>
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+            </div>
+
+            </li>
+
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+              </div>
+            </li>
+          -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Box Running
+        <small>Details</small>
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="WebGame.html">Home</a>
+        <li class="breadcrumb-item">
+          <a href="GameList1.html">2D Game</a>
+        </li>
+        <li class="breadcrumb-item active">Box Running</li>
+      </ol>
+
+      <!-- Game Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="main_detail" src="img/Game_Img/Project_Two.png" alt="" width="750px" height="500px">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Game Description</h3>
+
+          <p>
+            Did you have free time or rest time? Come in.
+            Here is a game for you, This character, box is running
+            and you should jump using (space), let's jump and try it!
+          </p>
+          <h3>Developer</h3>
+          <ul>
+            <li>Jelo</li>
+            <li>Jae.Thon96@gamil.com</li>
+          </ul>
+          <button type="button" onclick="location.href='JeloProfile.html'" class="">Profile</button>
+          <br/>
+
+          <div class="container-game" style="background-color:#f1f1f1">
+            <button type="button" onclick="location.href='Notyet.html'" class="btn btn-primary">Play</button>
+          </div>
+
+          <h3 class="my-3">Project Details</h3>
+          <ul>
+            <li>Running</li>
+            <li>Simple</li>
+            <li>Killing Time</li>
+            <li>Open Source</li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Related this game</h3>
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="GameList1_Detail_Raizer.html">
+          <img class="main_detail" src="img/Game_Img/Project_One.png" alt="Raizer" width="250px" height="150px">
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="GameList1_Detail_BoxRunning.html">
+          <img class="main_detail" src="img/Game_Img/Project_Two.png" alt="BoxRunning" width="250px" height="150px">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="GameList1_Detail_Mole.html">
+          <img class="main_detail" src="img/Game_Img/Project_Third.png" alt="MoleGame" width="250px" height="150px">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="GameList1_Detail_Raizer.html">
+          <img class="main_detail" src="img/Game_Img/Project_One.png" alt="Raizer" width="250px" height="150px">
+        </a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Comments Form -->
+    <div class="card my-4">
+      <h5 class="card-header">Leave a Comment:</h5>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <button onclick="alert_suc()">Comment</button>
+
+          <!--noncompleteion component -->
+          <script>
+          var myVar;
+
+          function alert_suc() {
+              myVar = setTimeout(alertFunc, 1000);
+          }
+
+          function alertFunc() {
+            alert("Success!");
+          }
+          </script>
+          <!-- noncompleteion -->
+        </form>
+      </div>
+    </div>
+
+    <!-- Single Comment -->
+    <div class="media mb-4">
+      <img class="d-flex mr-3 rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdJv2Qteos9NN6vG7bGgW48MOhjI3W1sRiOph6ytn3t64WkQp_TQ" alt="img" width="50" height="50">
+      <div class="media-body">
+        <h5 class="mt-0">Steven Jobs</h5>
+          Isn't it cute?, the box nahha
+        </div>
+    </div>
+
+    <!-- Comment with nested comments -->
+    <div class="media mb-4">
+      <img class="d-flex mr-3 rounded-circle" src="http://cfile2.uf.tistory.com/image/213D18435900DDE00E52DA" alt="img" width="50" height="50">
+      <div class="media-body">
+        <h5 class="mt-0">Park Bo Young</h5>
+          OHHH YEAH I am top score YAHAH
+        <div class="media mt-4">
+          <img class="d-flex mr-3 rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSqjF6tbZ9y5hdJHHaGD3AWdYqirY1Yj2EXk31CFoPuR08RBj" alt="img" width="50" height="50">
+          <div class="media-body">
+            <h5 class="mt-0">Cristiano Ronaldo dos Santos Aveiro</h5>
+              Sound good to me, so i will try
+          </div>
+        </div>
+
+        <div class="media mt-4">
+          <img class="d-flex mr-3 rounded-circle" src="http://mblogthumb3.phinf.naver.net/20110226_286/ds1104_1298708831894sEXXY_JPEG/9.jpg?type=w2" alt="img" width="50" height="50">
+          <div class="media-body">
+            <h5 class="mt-0">Emma Charlotte Duerre Watson</h5>
+              IDK well..  so lazy for me.. It is not good for me,
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; WEGA</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  </body>
+
+</html>

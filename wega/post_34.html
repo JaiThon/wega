@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEGA Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page-->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- login stylesheet for this page-->
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- GameBox stylesheet for this page-->
+    <link href="css/Gamebox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="WebGame.html">WEGA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Game component-->
+            <li class="nav-item  dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item active" href="GameList1.html">2D Game</a>
+                <a class="dropdown-item" href="GameList2.html">3D RPG Game</a>
+                <a class="dropdown-item" href="Notyet.html">VR Game</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <!-- login component-->
+            <li class="nav-item">
+              <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a /button>
+
+              <div id="id01" class="modal" target="parent">
+
+                <form class="modal-content animate" action="/login_submit.php">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="img/avater.png" alt="Avatar" class="avatar" width="50px" height="100px">
+                    </div>
+
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="location.href='signup.html'" class="signupbtn">Sign up</button>
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+            </div>
+
+            </li>
+
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+              </div>
+            </li>
+          -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">How to align text inside a placeholder?
+        <small>by
+          <a href="communication.html">post</a>
+        </small>
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="WebGame.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Post</li>
+      </ol>
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Date/Time -->
+          <img class="d-flex mr-3 rounded-circle" src="data:image/jpeg;base64,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" alt="img" width="50" height="50">
+          <p>Posted on April 24, 2018 at 12:00 PM</p>
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">
+           I have a input type text where placeholder having two values like (English and spanish). but i want english text to be left align and spanish text should be right align but in my case i am doing this like .
+            </p>
+            <img class="img-fluid rounded" src="post_img/post34.png" alt="post34" width="900px" height="200px">
+
+            <p class="lead">
+            I am doing like this using nbsp but when i open this on another window or in responsive mode text getting outside or not aligned. so how can i align text inside placeholder to left and right please help me related this ..
+          </p>
+          <hr>
+
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Leave a Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="https://www.irishtimes.com/polopoly_fs/1.3250904.1507642347!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" alt="img" width="50" height="50">
+            <div class="media-body">
+              <h5 class="mt-0">Ariana Grande</h5>
+              You can't do this with pure html and css, a workaround would be using js, and faking a placeholder behavior with css.. like the example.
+              <img class="img-fluid rounded" src="post_img/post34_reply1.png" alt="post34" width="900px" height="200px"><hr>
+              <img class="img-fluid rounded" src="post_img/post34_reply2.png" alt="post34" width="900px" height="200px"><hr>
+              <img class="img-fluid rounded" src="post_img/post34_reply3.png" alt="post34" width="900px" height="200px">
+            </div>
+          </div>
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="data:image/jpeg;base64,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" alt="img" width="50" height="50">
+                <div class="media-body">
+                  <h5 class="mt-0">Camila Cabello</h5>
+                  Thank u :) Ariana!!.
+                </div>
+              </div>
+            </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card mb-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="WebGame.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="GameList1.html">2D Game</a>
+                    </li>
+                    <li>
+                      <a href="GameList2.html">3D Game</a>
+                    </li>
+                    <li>
+                      <a href="communication.html">Communication</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Clock Widget</h5>
+            <iframe src="http://free.timeanddate.com/clock/i67np5km/n4828/tlkr/fn17/fs15/tt0/tw1/tm1/td2/ta1/tb1" frameborder="0" width="350" height="30"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; WEGA</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

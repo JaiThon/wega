@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEGA Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page-->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- login stylesheet for this page-->
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- GameBox stylesheet for this page-->
+    <link href="css/Gamebox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="WebGame.html">WEGA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Game component-->
+            <li class="nav-item  dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item active" href="GameList1.html">2D Game</a>
+                <a class="dropdown-item" href="GameList2.html">3D RPG Game</a>
+                <a class="dropdown-item" href="Notyet.html">VR Game</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <!-- login component-->
+            <li class="nav-item">
+              <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a /button>
+
+              <div id="id01" class="modal" target="parent">
+
+                <form class="modal-content animate" action="/login_submit.php">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="img/avater.png" alt="Avatar" class="avatar" width="50px" height="100px">
+                    </div>
+
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="location.href='signup.html'" class="signupbtn">Sign up</button>
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+            </div>
+
+            </li>
+
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+              </div>
+            </li>
+          -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Responsive CSS Horizontal Scroll
+        <small>by
+          <a href="communication.html">post</a>
+        </small>
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="WebGame.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Post</li>
+      </ol>
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Date/Time -->
+          <img class="d-flex mr-3 rounded-circle" src="data:image/jpeg;base64,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" alt="img" width="50" height="50">
+          <p>Posted on April 23, 2018 at 12:00 PM</p>
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="post_img/post31.png" alt="post31" width="900px" height="300px">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">I'm trying to send a PHP contact form using Ajax and PHP. In the form, there's a select which take in multiple options. The result I get from the contact form only has 1 value printed in the received email.
+
+            This is how my code looks like.
+
+            HTML</p>
+
+          <hr>
+
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Leave a Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdJv2Qteos9NN6vG7bGgW48MOhjI3W1sRiOph6ytn3t64WkQp_TQ" alt="img" width="50" height="50">
+            <div class="media-body">
+              <h5 class="mt-0">Steven Jobs</h5>
+              <img class="img-fluid rounded" src="post_img/post31_reply1.png" alt="post31" width="900px" height="200px">
+              The value of $_POST['room'] is an array. You could use implode() to get all values, if the $value is an array using
+            </div>
+          </div>
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://cfile2.uf.tistory.com/image/213D18435900DDE00E52DA" alt="img" width="50" height="50">
+            <div class="media-body">
+              <h5 class="mt-0">Park Bo Young</h5>
+                Did u made this source code?
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSqjF6tbZ9y5hdJHHaGD3AWdYqirY1Yj2EXk31CFoPuR08RBj" alt="img" width="50" height="50">
+                <div class="media-body">
+                  <h5 class="mt-0">Cristiano Ronaldo dos Santos Aveiro</h5>
+                    yep
+                </div>
+              </div>
+
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="http://mblogthumb3.phinf.naver.net/20110226_286/ds1104_1298708831894sEXXY_JPEG/9.jpg?type=w2" alt="img" width="50" height="50">
+                <div class="media-body">
+                  <h5 class="mt-0">Emma Charlotte Duerre Watson</h5>
+                    Can i see ur code?
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card mb-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="WebGame.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="GameList1.html">2D Game</a>
+                    </li>
+                    <li>
+                      <a href="GameList2.html">3D Game</a>
+                    </li>
+                    <li>
+                      <a href="communication.html">Communication</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Clock Widget</h5>
+            <iframe src="http://free.timeanddate.com/clock/i67np5km/n4828/tlkr/fn17/fs15/tt0/tw1/tm1/td2/ta1/tb1" frameborder="0" width="350" height="30"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; WEGA</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

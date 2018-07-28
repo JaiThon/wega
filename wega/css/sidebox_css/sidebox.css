@@ -1,0 +1,34 @@
+#timebox {
+   border-radius:8px;
+   -webkit-border-radius:8px;
+   background-color: #FFCCFF;
+   position:fixed;
+   width:210px;
+   top:880px;
+   right:50px;
+   padding: 3px 10px
+ }
+
+ #ad_box1 {
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    background-color: #FFCCFF;
+    position:fixed;
+    width:350px;
+    height: 200px;
+    top:700px;
+    left:30px;
+    padding: 3px 10px
+  }
+
+	
+ #widgetbox {
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    position:fixed;
+    width:350px;
+    height: 700px;
+    top:300px;
+    right:30px;
+    padding: 3px 10px
+  }

@@ -1,0 +1,4 @@
+chrome://flags/
+=> webGl enable
+
+Or you can use this Unity Web game by using Firefox, web browser
